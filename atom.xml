@@ -3,7 +3,7 @@
   <title>Torstein Bjørnstad</title>
   <link href="http://www.tosh.no/atom.xml" rel="self"/>
   <link href="http://www.tosh.no"/>
-  <updated>2013-01-13T12:25:04.886Z</updated>
+  <updated>2013-01-13T12:34:05.150Z</updated>
   <id>http://www.tosh.no</id>
   <author>
     <name>Torstein Bjørnstad</name>
@@ -14,7 +14,7 @@
     <entry>
       <title>This is a Blog Post</title>
       <link href="http://www.tosh.no//posts/hello"/>
-      <updated>2013-01-13T12:14:08.000Z</updated>
+      <updated>2013-01-13T12:33:00.000Z</updated>
       <id>http://www.tosh.no//posts/hello</id>
       <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
@@ -67,7 +67,7 @@
       &lt;hr&gt;
       &lt;footer&gt;
         &lt;div&gt;© Torstein Bjørnstad 2013&lt;/div&gt;
-        &lt;div style=&quot;font-style:italic; font-size: 12px&quot;&gt;This website was last updated at Sun Jan 13 2013 13:25:04 GMT+0100 (CET)&lt;/div&gt;
+        &lt;div style=&quot;font-style:italic; font-size: 12px&quot;&gt;This website was last updated at Sun Jan 13 2013 13:34:05 GMT+0100 (CET)&lt;/div&gt;
       &lt;/footer&gt;
     &lt;/div&gt;
     &lt;!-- Scripts--&gt;&lt;script &gt;(function(){
