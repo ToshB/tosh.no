@@ -41,7 +41,8 @@
     &lt;!-- Markup--&gt;
     &lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
       &lt;div class=&quot;navbar-inner&quot;&gt;
-        &lt;div class=&quot;container&quot;&gt;&lt;a href=&quot;/&quot; class=&quot;brand&quot;&gt;Torstein Bjørnstad&lt;/a&gt;&lt;!--ul.nav
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;!--a.brand(href=&quot;/&quot;) Torstein Bjørnstad--&gt;&lt;!--ul.nav
           &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/hello&quot;&gt;&lt;a href=&quot;/pages/hello&quot; property=&quot;dc:title&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
           &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/posts&quot;&gt;&lt;a href=&quot;/pages/posts&quot; property=&quot;dc:title&quot;&gt;Posts&lt;/a&gt;&lt;/li&gt;--&gt;
         &lt;/div&gt;
@@ -65,30 +66,8 @@
       &lt;hr&gt;
       &lt;footer&gt;
         &lt;div&gt;© Torstein Bjørnstad 2013&lt;/div&gt;
-        &lt;div style=&quot;font-style:italic; font-size: 12px&quot;&gt;This website was last updated at Sun Jan 13 2013 13:34:05 GMT+0100 (CET)&lt;/div&gt;
       &lt;/footer&gt;
     &lt;/div&gt;
-    &lt;!-- Scripts--&gt;&lt;script &gt;(function(){
-	// Add the depedency if it doesn't already exist
-if ( typeof io === 'undefined' ) {
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = true;
-	t.src = '/socket.io/socket.io.js';
-	t.onload = function(){
-
-// Listen for the regenerated event
-// and perform a reload of the page when the event occurs
-var socket = io.connect('/docpad-live-reload');
-socket.on('regenerated',function(){
-	document.location.reload();
-});
-
-	};
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t,s);
-}
-})();&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/prettify.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/jquery.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/twitter-bootstrap/js/bootstrap.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/log.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/modernizr.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/script.js&quot;&gt;&lt;/script&gt;
   &lt;/body&gt;
 &lt;/html&gt;</content>
     </entry>

@@ -64,7 +64,7 @@ html(lang="en")
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
-          a.brand(href="/") Torstein Bjørnstad
+          //a.brand(href="/") Torstein Bjørnstad
           //ul.nav
             each doc in getCollection('pages').toJSON()
               - clazz = (document.url === doc.url) ? 'active' : null
@@ -75,7 +75,4 @@ html(lang="en")
       hr
       footer
         div= site.copyright
-        div(style="font-style:italic; font-size: 12px") This website was last updated at #{site.date}
-
-    // Scripts
-    != scripts.toHTML()
+        

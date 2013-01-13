@@ -23,7 +23,8 @@
     <!-- Markup-->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
-        <div class="container"><a href="/" class="brand">Torstein Bjørnstad</a><!--ul.nav
+        <div class="container">
+          <!--a.brand(href="/") Torstein Bjørnstad--><!--ul.nav
           <li typeof="sioc:Page" about="/pages/hello"><a href="/pages/hello" property="dc:title">This is a Page</a></li>
           <li typeof="sioc:Page" about="/pages/posts"><a href="/pages/posts" property="dc:title">Posts</a></li>-->
         </div>
@@ -54,29 +55,7 @@
       <hr>
       <footer>
         <div>© Torstein Bjørnstad 2013</div>
-        <div style="font-style:italic; font-size: 12px">This website was last updated at Sun Jan 13 2013 13:34:05 GMT+0100 (CET)</div>
       </footer>
     </div>
-    <!-- Scripts--><script >(function(){
-	// Add the depedency if it doesn't already exist
-if ( typeof io === 'undefined' ) {
-	var t = document.createElement('script');
-	t.type = 'text/javascript';
-	t.async = true;
-	t.src = '/socket.io/socket.io.js';
-	t.onload = function(){
-
-// Listen for the regenerated event
-// and perform a reload of the page when the event occurs
-var socket = io.connect('/docpad-live-reload');
-socket.on('regenerated',function(){
-	document.location.reload();
-});
-
-	};
-	var s = document.getElementsByTagName('script')[0];
-	s.parentNode.insertBefore(t,s);
-}
-})();</script><script defer="defer"  src="/vendor/prettify.js"></script><script defer="defer"  src="/vendor/jquery.js"></script><script defer="defer"  src="/vendor/twitter-bootstrap/js/bootstrap.js"></script><script defer="defer"  src="/vendor/log.js"></script><script defer="defer"  src="/vendor/modernizr.js"></script><script defer="defer"  src="/scripts/script.js"></script>
   </body>
 </html>
