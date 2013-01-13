@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Torstein Bjørnstad</title>
+  <link href="http://www.tosh.no/atom.xml" rel="self"/>
+  <link href="http://www.tosh.no"/>
+  <updated>2013-01-13T12:25:04.886Z</updated>
+  <id>http://www.tosh.no</id>
+  <author>
+    <name>Torstein Bjørnstad</name>
+    <email>tosh@tosh.no</email>
+  </author>
+
+  
+    <entry>
+      <title>This is a Blog Post</title>
+      <link href="http://www.tosh.no//posts/hello"/>
+      <updated>2013-01-13T12:14:08.000Z</updated>
+      <id>http://www.tosh.no//posts/hello</id>
+      <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;!-- Meta--&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+    &lt;title&gt;This is a Blog Post | Torstein Bjørnstad&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Torstein Bjørnstad&quot;&gt;&lt;meta http-equiv=&quot;X-Powered-By&quot; content=&quot;DocPad&quot;/&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+    &lt;!-- Icons--&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;ico/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;ico/apple-touch-icon-57-precomposed.png&quot;&gt;&lt;!--[if lt IE 9]&gt;
+    &lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+    &lt;!-- Styles--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/prettify.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/twitter-bootstrap/css/bootstrap.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/twitter-bootstrap/css/bootstrap-responsive.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Markup--&gt;
+    &lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
+      &lt;div class=&quot;navbar-inner&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;&lt;a href=&quot;/&quot; class=&quot;brand&quot;&gt;Welcome&lt;/a&gt;
+          &lt;ul class=&quot;nav&quot;&gt;
+            &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/hello&quot;&gt;&lt;a href=&quot;/pages/hello&quot; property=&quot;dc:title&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
+            &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/posts&quot;&gt;&lt;a href=&quot;/pages/posts&quot; property=&quot;dc:title&quot;&gt;Posts&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+  &lt;h1&gt;This is a Blog Post&lt;/h1&gt;
+  &lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;This is a &lt;strong&gt;blog post&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;footer&gt;
+  &lt;section id=&quot;related&quot;&gt;
+    &lt;h3&gt;Related Posts&lt;/h3&gt;
+    &lt;nav class=&quot;linklist&quot;&gt;
+      &lt;li&gt;&lt;span&gt;Jan 13 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/pages/hello&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
+    &lt;/nav&gt;
+  &lt;/section&gt;
+&lt;/footer&gt;&lt;/section&gt;
+      &lt;hr&gt;
+      &lt;footer&gt;
+        &lt;div&gt;© Torstein Bjørnstad 2013&lt;/div&gt;
+        &lt;div style=&quot;font-style:italic; font-size: 12px&quot;&gt;This website was last updated at Sun Jan 13 2013 13:25:04 GMT+0100 (CET)&lt;/div&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+    &lt;!-- Scripts--&gt;&lt;script &gt;(function(){
+	// Add the depedency if it doesn't already exist
+if ( typeof io === 'undefined' ) {
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = true;
+	t.src = '/socket.io/socket.io.js';
+	t.onload = function(){
+
+// Listen for the regenerated event
+// and perform a reload of the page when the event occurs
+var socket = io.connect('/docpad-live-reload');
+socket.on('regenerated',function(){
+	document.location.reload();
+});
+
+	};
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t,s);
+}
+})();&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/prettify.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/jquery.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/twitter-bootstrap/js/bootstrap.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/log.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/vendor/modernizr.js&quot;&gt;&lt;/script&gt;&lt;script defer=&quot;defer&quot;  src=&quot;/scripts/script.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+    </entry>
+  
+</feed>
