@@ -41,11 +41,9 @@
     &lt;!-- Markup--&gt;
     &lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
       &lt;div class=&quot;navbar-inner&quot;&gt;
-        &lt;div class=&quot;container&quot;&gt;&lt;a href=&quot;/&quot; class=&quot;brand&quot;&gt;Welcome&lt;/a&gt;
-          &lt;ul class=&quot;nav&quot;&gt;
-            &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/hello&quot;&gt;&lt;a href=&quot;/pages/hello&quot; property=&quot;dc:title&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
-            &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/posts&quot;&gt;&lt;a href=&quot;/pages/posts&quot; property=&quot;dc:title&quot;&gt;Posts&lt;/a&gt;&lt;/li&gt;
-          &lt;/ul&gt;
+        &lt;div class=&quot;container&quot;&gt;&lt;a href=&quot;/&quot; class=&quot;brand&quot;&gt;Torstein Bjørnstad&lt;/a&gt;&lt;!--ul.nav
+          &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/hello&quot;&gt;&lt;a href=&quot;/pages/hello&quot; property=&quot;dc:title&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
+          &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/posts&quot;&gt;&lt;a href=&quot;/pages/posts&quot; property=&quot;dc:title&quot;&gt;Posts&lt;/a&gt;&lt;/li&gt;--&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
