@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Torstein Bjørnstad</title>
+  <link href="http://www.tosh.no/atom.xml" rel="self"/>
+  <link href="http://www.tosh.no"/>
+  <updated>2013-01-13T12:34:05.150Z</updated>
+  <id>http://www.tosh.no</id>
+  <author>
+    <name>Torstein Bjørnstad</name>
+    <email>tosh@tosh.no</email>
+  </author>
+
+  
+    <entry>
+      <title>This is a Blog Post</title>
+      <link href="http://www.tosh.no//posts/hello"/>
+      <updated>2013-01-13T12:33:00.000Z</updated>
+      <id>http://www.tosh.no//posts/hello</id>
+      <content type="html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;!-- Meta--&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=utf-8&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot;&gt;
+    &lt;title&gt;This is a Blog Post | Torstein Bjørnstad&lt;/title&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Torstein Bjørnstad&quot;&gt;&lt;meta http-equiv=&quot;X-Powered-By&quot; content=&quot;DocPad&quot;/&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
+    &lt;!-- Icons--&gt;
+    &lt;link rel=&quot;shortcut icon&quot; href=&quot;ico/favicon.ico&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;ico/apple-touch-icon-144-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;ico/apple-touch-icon-114-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;ico/apple-touch-icon-72-precomposed.png&quot;&gt;
+    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;ico/apple-touch-icon-57-precomposed.png&quot;&gt;&lt;!--[if lt IE 9]&gt;
+    &lt;script async src=&quot;http://html5shim.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;&lt;![endif]--&gt;
+    &lt;!-- Styles--&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/prettify.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/twitter-bootstrap/css/bootstrap.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/vendor/twitter-bootstrap/css/bootstrap-responsive.css&quot; /&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/styles/style.css&quot; /&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Markup--&gt;
+    &lt;div class=&quot;navbar navbar-fixed-top&quot;&gt;
+      &lt;div class=&quot;navbar-inner&quot;&gt;
+        &lt;div class=&quot;container&quot;&gt;
+          &lt;!--a.brand(href=&quot;/&quot;) Torstein Bjørnstad--&gt;&lt;!--ul.nav
+          &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/hello&quot;&gt;&lt;a href=&quot;/pages/hello&quot; property=&quot;dc:title&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
+          &lt;li typeof=&quot;sioc:Page&quot; about=&quot;/pages/posts&quot;&gt;&lt;a href=&quot;/pages/posts&quot; property=&quot;dc:title&quot;&gt;Posts&lt;/a&gt;&lt;/li&gt;--&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;section id=&quot;content&quot; class=&quot;content&quot;&gt;
+&lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
+  &lt;h1&gt;This is a Blog Post&lt;/h1&gt;
+  &lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;This is a &lt;strong&gt;blog post&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/article&gt;
+&lt;footer&gt;
+  &lt;section id=&quot;related&quot;&gt;
+    &lt;h3&gt;Related Posts&lt;/h3&gt;
+    &lt;nav class=&quot;linklist&quot;&gt;
+      &lt;li&gt;&lt;span&gt;Jan 13 2013&lt;/span&gt; &amp;raquo;&amp;nbsp;&lt;a href=&quot;/pages/hello&quot;&gt;This is a Page&lt;/a&gt;&lt;/li&gt;
+    &lt;/nav&gt;
+  &lt;/section&gt;
+&lt;/footer&gt;&lt;/section&gt;
+      &lt;hr&gt;
+      &lt;footer&gt;
+        &lt;div&gt;© Torstein Bjørnstad 2013&lt;/div&gt;
+      &lt;/footer&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</content>
+    </entry>
+  
+</feed>
