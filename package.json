@@ -1,27 +1,26 @@
 {
-	"name": "balupton.docpad",
-	"version": "1.2.2",
-	"description": "Website of Benjamin Lupton. Founder of Bevry, DocPad and HistoryJS. Aficionado of HTML5, CoffeeScript and NodeJS. Available for consulting, training and talks. ENTP.",
-	"homepage": "https://github.com/balupton/balupton.docpad",
+	"name": "toshb.docpad",
+	"version": "1.0",
+	"description": "Website of Torstein Bjørnstad",
+	"homepage": "https://github.com/toshb/toshb.github.com",
 	"keywords": [
-		"balupton",
-		"benjamin lupton",
+		"tosh",
 		"website",
 		"docpad"
 	],
-	"author": "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+	"author": "Torstein Bjørnstad <tosh@tosh.no> (http://tosh.no)",
 	"maintainers": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+		"Torstein Bjørnstad <tosh@tosh.no> (http://tosh.no)"
 	],
 	"contributors": [
-		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
-	],
+		"Torstein Bjørnstad <tosh@tosh.no> (http://tosh.no)"
+	],			
 	"bugs": {
-		"url": "https://github.com/balupton/balupton.docpad/issues"
+		"url": "https://github.com/ToshB/toshb.github.com/issues"
 	},
 	"repository" : {
 		"type" : "git",
-		"url" : "http://github.com/balupton/balupton.docpad.git"
+		"url" : "https://github.com/ToshB/toshb.github.com.git"
 	},
 	"engines": {
 		"node": "0.8.x",
@@ -44,5 +43,8 @@
 	"devDependencies": {
 		"docpad-plugin-livereload": "2.x"
 	},
-	"main": "node_modules/docpad/bin/docpad-server"
+	"main": "node_modules/docpad/bin/docpad-server",
+	"scripts": {
+ 	   "start": "node_modules/docpad/bin/docpad-server"
+	}
 }
