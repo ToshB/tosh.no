@@ -1,0 +1,48 @@
+{
+	"name": "balupton.docpad",
+	"version": "1.2.2",
+	"description": "Website of Benjamin Lupton. Founder of Bevry, DocPad and HistoryJS. Aficionado of HTML5, CoffeeScript and NodeJS. Available for consulting, training and talks. ENTP.",
+	"homepage": "https://github.com/balupton/balupton.docpad",
+	"keywords": [
+		"balupton",
+		"benjamin lupton",
+		"website",
+		"docpad"
+	],
+	"author": "Benjamin Lupton <b@lupton.cc> (http://balupton.com)",
+	"maintainers": [
+		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+	],
+	"contributors": [
+		"Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)"
+	],
+	"bugs": {
+		"url": "https://github.com/balupton/balupton.docpad/issues"
+	},
+	"repository" : {
+		"type" : "git",
+		"url" : "http://github.com/balupton/balupton.docpad.git"
+	},
+	"engines": {
+		"node": "0.8.x",
+		"npm": "1.1.x"
+	},
+	"dependencies": {
+		"docpad": "6.x",
+		"docpad-plugin-cachr": "2.x",
+		"docpad-plugin-cleanurls": "2.x",
+		"docpad-plugin-coffeekup": "2.x",
+		"docpad-plugin-coffeescript": "2.x",
+		"docpad-plugin-eco": "2.x",
+		"docpad-plugin-feedr": "2.x",
+		"docpad-plugin-marked": "2.x",
+		"docpad-plugin-partials": "2.x",
+		"docpad-plugin-services": "2.x",
+		"docpad-plugin-stylus": "2.x",
+		"docpad-plugin-text": "2.x"
+	},
+	"devDependencies": {
+		"docpad-plugin-livereload": "2.x"
+	},
+	"main": "node_modules/docpad/bin/docpad-server"
+}

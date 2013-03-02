@@ -1,0 +1,447 @@
+###
+standalone: true
+###
+
+// Coded in Stylus: http://learnboost.github.com/stylus/
+
+// ====================================
+// Imports
+
+// Reset: http://necolas.github.com/normalize.css/
+@import '/vendor/normalize.css'
+
+// nib: http://visionmedia.github.com/nib/
+@import 'nib'
+
+// Responsive Layouts
+@import 'responsive.css'
+
+// ====================================
+// Configuration
+
+// Colors
+colorAccent = #FF8A3B
+colorLink = hsl(191, 100%, 40%);
+colorLinkHover = #00718A
+colorHeader = #445566
+colorSubHeader = #9D9FA5
+colorContent = #797F84
+colorActive = colorAccent
+colorInActive = #CCCCCC
+colorQuote = colorSubHeader
+
+// Weights
+weightBoldest = 700
+weightBold = 600
+weightNormal = 500
+weightLight = 300
+weightLightest = 100
+
+
+// ====================================
+// Styles
+
+// Everything
+*
+	// Make paddings be included within the width
+	box-sizing: border-box
+.fancybox-wrap
+#fancybox-overlay
+	box-sizing: content-box
+
+// Hide javascript only properties
+.js
+	display: none
+
+// Content
+body
+	font-family: "Segoe WP", "Segoe UI", Segoe, Calibri, Helvetica, Arial
+	color: colorContent
+	font-size: 16px
+	font-weight: weightNormal
+	position: relative
+	min-height: 2000px
+
+// Paragraphs
+p
+	margin: 0 0 1em
+
+// Accent
+em
+	color: colorAccent
+	font-weight: weightNormal
+	font-style: normal
+strong
+	color: colorAccent
+	font-weight: weightBold
+blockquote
+	color: colorQuote
+	font-weight: weightNormal
+	font-style: italic
+
+// Links Hover Effect
+.subtle
+	transition: opacity 1s
+	background: white
+	opacity: 0.3
+	&:hover
+		opacity: 1
+
+// Links
+a,a:link,a:visited
+	cursor: pointer
+	color: colorLink
+	text-decoration: none
+a:hover
+	cursor: pointer
+	color: colorLinkHover !important
+	text-decoration: underline
+
+// Heading
+header.heading
+	h1,h2
+		font-weight: weightLight
+	h1
+		color: colorHeader
+		font-size: 36px
+	h2
+		color: colorSubHeader
+		font-size: 18px
+.heading
+	position: relative
+	.heading-avatar
+		display: block
+		position: absolute
+		top: 0.5em
+		left: 18em
+		background: url("/images/balupton-small.gif")
+		width: 23px
+		height: 36px
+		transition: all 0.5s ease-in-out
+	.heading-avatar:hover
+		transform: rotate(720deg)
+		background: url("/images/balupton-large.gif")
+		width: 365px
+		height: 526px
+
+// Pages
+nav.pages
+	font-size: 56px
+	ul
+		padding: 0
+	li
+		display: inline
+		margin-right: 0.75em
+	li a
+		font-weight: weightLight
+		color: colorInActive
+	li.active a
+		font-weight: weightLight
+		color: colorActive
+
+// Footing
+footer.footing
+	margin: 4em 0 3em
+	opacity: 0.5
+	background: white
+	div,p
+		margin: 0
+	.about
+		font-size: 16px
+	.copyright
+		font-size: 12px
+
+// Sidebar
+aside.sidebar
+	ul, ul li
+		list-style: none
+		margin: 0
+		padding: 0
+
+	section
+		font-size: 14px
+		margin-bottom: 2em
+		header
+			position: relative
+			h1
+				// font-size: 56px
+				// text-transform: lowercase
+				font-size: 42px
+				font-weight: weightLightest
+				margin: 0
+				padding: 0
+			.icon
+				position: absolute
+				bottom: 12px
+				right: 0
+		&,a,a:link,a:visited
+			color: colorContent
+		ul
+			height: 30em //180px
+			position: relative
+			overflow: auto
+		li
+			margin: 1em 0
+
+	// Links Hover Effect
+	section.links
+		ul
+			transition: opacity 1s
+			background: white
+			opacity: 0.3
+			li
+				width: 96%
+	&:hover section.links
+		ul
+			opacity: 1
+
+	// Images Hover Effect
+	section.images
+		ul img
+			transition: opacity 1s
+			opacity: 0.3
+	&:hover section.images
+		ul img
+			opacity: 0.5
+			&:hover
+				opacity: 1 !important
+
+	// Section Colors
+	section.twitter h1
+		color: #248DCD
+	section.facebook h1
+		color: #4966A1
+	section.linkedin h1
+		color: #0083B3
+	section.vimeo h1
+		color: #27A6D1
+	section.flickr h1
+		color: #EE3F84
+	section.github h1
+		color: black
+
+	// Images Sizing
+	section.images
+		ul
+			line-height: 0
+			li
+				margin: 0
+				display: inline
+			img
+				width: 48%
+
+// Modals
+aside.modal.contact
+	z-index: 500
+	position: fixed
+	width: 80%
+	left: 10%
+	padding: 2em
+	background: white
+	border: 1px solid colorContent
+	display: none
+	overflow: auto
+
+	h1,h2
+		font-weight: weightLight
+		color: colorHeader
+		font-size: 36px
+		margin: 1em 0 .25em
+		&:first-child
+			margin-top: 0
+
+aside.modal.backdrop
+	z-index: 499
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	padding: 0
+	margin: 0
+	background: white
+	cursor: pointer
+	display: none
+	opacity: 0.5
+
+
+// Content
+article.page
+	h1
+		margin: 4em 0 1em
+		color: colorAccent
+		font-size: 36px
+		font-weight: weightBoldest
+
+	h2
+		margin: 4em 0 1em
+		color: colorAccent
+		font-size: 24px
+		font-weight: weightBoldest
+
+	h3
+		margin: 2em 0 0
+		color: colorAccent
+		font-size: 18px
+		font-weight: weightBold
+		a
+			font-weight: weightNormal
+
+	h4
+		margin: 2em 0 0
+		color: colorAccent
+		font-size: 16px
+		font-weight: weightNormal
+		a
+			font-weight: weightNormal
+
+	.document-date:before
+	.page-date:before
+		content: ' ⎋ ' // ✍
+	.project-watchers:before
+		content: ' ☆ '
+	a:hover
+		.project-watchers:before
+			content: ' ★ '
+
+	.document-date
+	.page-date
+	.project-watchers
+		white-space:nowrap
+
+	.page-header
+	.page-content
+		h1, h2
+			margin: 2em 0 1em
+			small
+				font-weight: weightLightest
+
+	.document-list
+	.project-list
+	section:first-of-type
+		h2
+			margin: 1em 0 1em
+		h3
+			margin: 1em 0 0
+
+	.document-list p.document-description
+	.project-list p.project-description
+		margin-left: 1em
+
+	.page-footer
+		background: hsl(0,0,99%)
+		margin: 3em 0 -1em
+
+	.related-documents
+	.page-comments
+	.social-buttons
+		margin: 3em -1em 0
+		padding: 1em 1em
+		background: whiteSmoke
+
+	.page-comments
+		padding-bottom: 0
+
+	.social-buttons
+		.social-button
+			height: 20px
+			width: 450px
+			overflow: hidden
+			margin: 0.5em 0
+
+
+
+// ====================================
+// Layout: Initial
+// Write your initial layout configuration here
+
+// Body
+body
+	padding: 0 2em
+
+// Mainbar
+header.heading
+nav.pages
+footer.footing
+article.page
+	width: 70%
+
+// Sidebar
+aside.sidebar
+	width: 22%
+	min-width: 270px
+	position: absolute
+	top: 0
+	right: 2em
+
+.promo
+	&.promo-top
+		margin: 4em 0 4em -0px
+	&.promo-bottom
+		margin: 5em 0 0 -13px
+	a
+		padding: 1.5em 0 1em 0
+		display: block
+		border: 1px solid black
+		width: 70%
+		text-align: center
+		transition: box-shadow 0.5s ease-in-out
+
+		img
+			max-width: 100%
+			height: auto
+
+		&:hover
+			box-shadow: hsl(60, 33%, 43%) 0 0 30px
+
+
+// ====================================
+// Layout: Responsive
+// Write your responsive layout styles here
+// Below is merely an example of how this should work
+
+// Hide the sidebar
+@media screen and (max-width: 960px)
+	// Body
+	body
+		padding: 0 2em
+
+	// Mainbar
+	header.heading
+	nav.pages
+	footer.footing
+	article.page
+	.promo a
+		width: 95%
+
+	// Sidebar
+	aside.sidebar
+		position: static
+		width: 95%
+
+
+@media screen and (max-width: 480px)
+	aside.modal.contact
+		width: 90%
+		left: 5%
+
+@media screen and (max-width: 320px)
+	// Body
+	body
+		padding: 0 0.5em
+
+	// Mainbar
+	header.heading
+	nav.pages
+	footer.footing
+	article.page
+	.promo a
+		width: 100%
+
+	// Navigation
+	nav.pages
+		font-size: 35px
+
+	// Sidebar
+	aside.sidebar
+		position: static
+		width: 100%
