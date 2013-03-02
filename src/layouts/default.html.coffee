@@ -46,7 +46,6 @@ html lang: 'en', ->
 		header '.heading', ->
 			a href:'/', title:'Return home', ->
 				h1 -> @site.text.heading
-				span '.heading-avatar', ->
 			h2 -> @site.text.subheading
 
 		# Pages

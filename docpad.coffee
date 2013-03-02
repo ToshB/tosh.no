@@ -3,30 +3,6 @@
 
 envConfig = process.env
 githubAuthString = "client_id=#{envConfig.BALUPTON_GITHUB_CLIENT_ID}&client_secret=#{envConfig.BALUPTON_GITHUB_CLIENT_SECRET}"
-getRankInUsers = (users) ->
-	rank = null
-
-	for user,index in users
-		if user.login is 'balupton'
-			rank = String(index+1)
-			break
-
-	return rank  if rank is null
-
-	if rank >= 10 and rank < 20
-		rank += 'th'
-	else switch rank.substr(-1)
-		when '1'
-			rank += 'st'
-		when '2'
-			rank += 'nd'
-		when '3'
-			rank += 'rd'
-		else
-			rank += 'th'
-
-	return rank
-
 
 # =================================
 # DocPad Configuration
@@ -42,26 +18,24 @@ module.exports =
 	templateData:
 		# Site Data
 		site:
-			url: "http://balupton.com"
-			title: "Benjamin Lupton"
-			author: "Benjamin Lupton"
-			email: "b@lupton.cc"
+			url: "http://tosh.no"
+			title: "Torstein Bjørnstad"
+			author: "Torstein Bjørnstad"
+			email: "tosh@tosh.no"
 			description: """
-				Website of Benjamin Lupton. Founder of Bevry, DocPad and HistoryJS. Aficionado of HTML5, CoffeeScript and NodeJS. Available for consulting, training and talks. ENTP.
+				Website of Torstein Bjørnstad. .NET Consulant at Webstep AS.
 				"""
 			keywords: """
-				balupton, benjamin lupton, lupton, coffeescript, node.js, javascript, history.js, html5, docpad, nowpad, jquery, css3, ruby, git, nosql, cson, html5 history api, ajax, html, web development, web design, nlp, git, neuro-linguistic programming, programming, hacking, hackathon, aloha editor, contenteditable, hallo, jekyll, entp, inventor, web 2.0
+				tosh, toshb, torstein bjørnstad, c#, javascript
 				"""
 
 			text:
-				heading: "Benjamin Lupton"
+				heading: "Torstein Bjørnstad"
 				subheading: '''
 					<t render="html.coffee">
 						link = @getPreparedLink.bind(@)
 						text """
-							Founder of #{link 'bevry'}, #{link 'docpad'}, #{link 'historyjs'}  &amp; #{link 'hostel'}.<br/>
-							Aficionado of #{link 'javascript'}, #{link 'nodejs'}, #{link 'opensource'} and #{link 'html5'}.<br/>
-							Available for consulting, training and speaking. #{link 'contact'}.
+							.NET Consultant at #{link 'webstep'}. #{link 'contact'}.
 							"""
 					</t>
 					'''
@@ -75,24 +49,24 @@ module.exports =
 					'''
 				copyright: '''
 					<t render="html.md">
-						Unless stated otherwise; all works are Copyright © 2011+ [Benjamin Lupton](http://balupton.com) and licensed [permissively](http://en.wikipedia.org/wiki/Permissive_free_software_licence) under the [MIT License](http://creativecommons.org/licenses/MIT/) for code and the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for everything else (including content, media and design), enjoy!
+						Unless stated otherwise; all works are Copyright © 2013 [Torstein Bjørnstad](http://www.tosh.no) and licensed [permissively](http://en.wikipedia.org/wiki/Permissive_free_software_licence) under the [MIT License](http://creativecommons.org/licenses/MIT/) for code and the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/) for everything else (including content, media and design), enjoy!
 					</t>
 					'''
 
 			services:
-				facebookLikeButton:
-					applicationId: '266367676718271'
-				facebookFollowButton:
-					applicationId: '266367676718271'
-					username: 'balupton'
-				twitterTweetButton: "balupton"
-				twitterFollowButton: "balupton"
-				githubFollowButton: "balupton"
-				quoraFollowButton: "Benjamin-Lupton"
-				disqus: 'balupton'
-				gauges: '5077ae93f5a1f5067b000028'
-				googleAnalytics: 'UA-4446117-1'
-				reinvigorate: '52uel-236r9p108l'
+				#facebookLikeButton:
+				#	applicationId: '266367676718271'
+				#facebookFollowButton:
+				#	applicationId: '266367676718271'
+				#	username: 'balupton'
+				twitterTweetButton: "ToshB"
+				twitterFollowButton: "ToshB"
+				githubFollowButton: "ToshB"
+				#quoraFollowButton: "Benjamin-Lupton"
+				disqus: 'toshb'
+				#gauges: '5077ae93f5a1f5067b000028'
+				googleAnalytics: 'UA-16411848-2'
+				#reinvigorate: '52uel-236r9p108l'
 
 			social:
 				"""
@@ -100,7 +74,6 @@ module.exports =
 				linkedin
 				github
 				twitter
-				vimeo
 				""".trim().split('\n')
 
 			scripts: """
@@ -110,19 +83,13 @@ module.exports =
 				""".trim().split('\n')
 
 			feeds: [
-					href: 'http://feeds.feedburner.com/balupton.atom'
-					title: 'Blog Posts'
-				,
-					href: 'https://github.com/balupton.atom'
+					#href: 'http://feeds.feedburner.com/toshb.atom'
+					#title: 'Blog Posts'
+				#,
+					href: 'https://github.com/toshb.atom'
 					title: 'GitHub Activity'
 				,
-					href: 'http://vimeo.com/api/v2/balupton/videos.atom'
-					title: 'Vimeo Videos'
-				,
-					href: 'http://api.flickr.com/services/feeds/photos_public.gne?id=35776898@N00&lang=en-us&format=atom'
-					title: 'Flickr Photos'
-				,
-					href: 'https://api.twitter.com/1/statuses/user_timeline.atom?screen_name=balupton&count=20&include_entities=true&include_rts=true'
+					href: 'https://api.twitter.com/1/statuses/user_timeline.atom?screen_name=toshb&count=20&include_entities=true&include_rts=true'
 					title: 'Tweets'
 			]
 
@@ -142,53 +109,17 @@ module.exports =
 			]
 
 			links:
+				webstep:
+					text: 'Webstep AS'
+					url: 'http://www.webstep.no'
+					title: 'Visit Website'
 				docpad:
 					text: 'DocPad'
 					url: 'http://docpad.org'
 					title: 'Visit Website'
-				hostel:
-					text: 'Startup Hostel'
-					url: 'http://startuphostel.org'
-					title: 'Visit Website'
-				backbonejs:
-					text: 'Backbone.js'
-					url: 'http://backbonejs.org'
-					title: 'Visit Website'
-				historyjs:
-					text: 'History.js'
-					url: 'http://historyjs.net'
-					title: 'Visit Website'
 				bevry:
 					text: 'Bevry'
 					url: 'http://bevry.me'
-					title: 'Visit Website'
-				services:
-					text: 'Services'
-					url: 'http://bevry.me/services'
-					title: "View my company's services"
-				opensource:
-					text: 'Open-Source'
-					url: 'http://en.wikipedia.org/wiki/Open-source_software'
-					title: 'Visit on Wikipedia'
-				html5:
-					text: 'HTML5'
-					url: 'http://en.wikipedia.org/wiki/HTML5'
-					title: 'Visit on Wikipedia'
-				javascript:
-					text: 'JavaScript'
-					url: 'http://en.wikipedia.org/wiki/JavaScript'
-					title: 'Visit on Wikipedia'
-				nodejs:
-					text: 'Node.js'
-					url: 'http://nodejs.org/'
-					title: 'Visit Website'
-				balupton:
-					text: 'Benjamin Lupton'
-					url: 'http://balupton.com'
-					title: 'Visit Website'
-				author:
-					text: 'Benjamin Lupton'
-					url: 'http://balupton.com'
 					title: 'Visit Website'
 				source:
 					text: 'open-source'
@@ -196,7 +127,7 @@ module.exports =
 					title: 'View Website Source'
 				contact:
 					text: 'Contact'
-					url: 'mailto:b@bevry.me'
+					url: 'mailto:tosh@tosh.no'
 					title: 'Contact me'
 					cssClass: 'contact-button'
 
@@ -214,37 +145,6 @@ module.exports =
 		getPreparedEmail: -> @document.email or @site.email
 		getPreparedDescription: -> @document.description or @site.description
 		getPreparedKeywords: -> @site.keywords.concat(@document.keywords or []).join(', ')
-
-		# Ranking Helpers
-		getAustraliaJavaScriptRank: ->
-			feed = @feedr.feeds['github-australia-javascript']?.users ? null
-			if feed
-				result = getRankInUsers(feed)
-			else
-				result = '2nd'
-			return result
-		getAustraliaRank: ->
-			feed = @feedr.feeds['github-australia']?.users ? null
-			if feed
-				result = getRankInUsers(feed)
-			else
-				result = '5th'
-			return result
-		getGithubFollowers: (floorToNearest=50) ->
-			followers = @feedr.feeds['github-profile']?.followers
-			if followers
-				result = Math.floor(followers/floorToNearest)*floorToNearest
-			else
-				result = 250
-			return result
-		getStackoverflowReputation: (floorToNearest=1000) ->
-			reputation = @feedr.feeds['stackoverflow-profile']?.users?[0]?.reputation ? null
-			if reputation
-				result = Math.floor(reputation/floorToNearest)*floorToNearest
-			else
-				result = 9000
-			return result
-
 
 	# =================================
 	# Collections
@@ -269,41 +169,41 @@ module.exports =
 			# Server Configuration
 
 			# Redirect Middleware
-			docpadServer.use (req,res,next) ->
-				if req.headers.host in ['www.balupton.com','lupton.cc','www.lupton.cc','balupton.no.de','balupton.herokuapp.com']
-					res.redirect 301, 'http://balupton.com'+req.url
-				else
-					next()
+			#docpadServer.use (req,res,next) ->
+			#	if req.headers.host in ['www.balupton.com','lupton.cc','www.lupton.cc','balupton.no.de','tosh.herokuapp.com']
+			#		res.redirect 301, 'http://balupton.com'+req.url
+			#	else
+			#		next()
 
 			# ---------------------------------
 			# Server Extensions
 
 			# Demos
-			docpadServer.get /^\/sandbox(?:\/([^\/]+).*)?$/, (req, res) ->
-				project = req.params[0]
-				res.redirect 301, "http://balupton.github.com/#{project}/demo/"
+			#docpadServer.get /^\/sandbox(?:\/([^\/]+).*)?$/, (req, res) ->
+			#	project = req.params[0]
+			#	res.redirect 301, "http://toshb.github.com/#{project}/demo/"
 				# ^ github pages don't have https
 
 			# Projects
-			docpadServer.get /^\/projects\/(.*)$/, (req, res) ->
-				project = req.params[0] or ''
-				res.redirect 301, "https://github.com/balupton/#{project}"
+			#docpadServer.get /^\/projects\/(.*)$/, (req, res) ->
+			#	project = req.params[0] or ''
+			#	res.redirect 301, "https://github.com/toshb/#{project}"
 
-			docpadServer.get /^\/(?:g|gh|github)(?:\/(.*))?$/, (req, res) ->
-				project = req.params[0] or ''
-				res.redirect 301, "https://github.com/balupton/#{project}"
+			#docpadServer.get /^\/(?:g|gh|github)(?:\/(.*))?$/, (req, res) ->
+			#	project = req.params[0] or ''
+			#	res.redirect 301, "https://github.com/toshb/#{project}"
 
 			# Twitter
-			docpadServer.get /^\/(?:t|twitter|tweet)(?:\/(.*))?$/, (req, res) ->
-				res.redirect 301, "https://twitter.com/balupton"
+			#docpadServer.get /^\/(?:t|twitter|tweet)(?:\/(.*))?$/, (req, res) ->
+			#	res.redirect 301, "https://twitter.com/toshb"
 
 			# Sharing Feed
-			docpadServer.get /^\/feeds?\/shar(e|ing)(?:\/(.*))?$/, (req, res) ->
-				res.redirect 301, "http://feeds.feedburner.com/balupton/shared"
+			#docpadServer.get /^\/feeds?\/shar(e|ing)(?:\/(.*))?$/, (req, res) ->
+			#	res.redirect 301, "http://feeds.feedburner.com/balupton/shared"
 
 			# Feeds
-			docpadServer.get /^\/feeds?(?:\/(.*))?$/, (req, res) ->
-				res.redirect 301, "http://feeds.feedburner.com/balupton"
+			#docpadServer.get /^\/feeds?(?:\/(.*))?$/, (req, res) ->
+			#	res.redirect 301, "http://feeds.feedburner.com/balupton"
 
 
 	# =================================
@@ -313,23 +213,21 @@ module.exports =
 		feedr:
 			feeds:
 				'stackoverflow-profile':
-					url: 'http://api.stackoverflow.com/1.0/users/130638/'
+					url: 'http://api.stackoverflow.com/1.0/users/328130/'
 				'github-australia-javascript':
 					url: "https://api.github.com/legacy/user/search/location:Australia%20language:JavaScript?#{githubAuthString}"
 				'github-australia':
 					url: "https://api.github.com/legacy/user/search/location:Australia?#{githubAuthString}"
 				'github-profile':
 					url: "https://api.github.com/users/balupton?#{githubAuthString}"
-				'balupton-projects':
-					url: "https://api.github.com/users/balupton/repos?per_page=100&#{githubAuthString}"
-				'bevry-projects':
-					url: "https://api.github.com/users/bevry/repos?per_page=100&#{githubAuthString}"
+				'toshb-projects':
+					url: "https://api.github.com/users/toshb/repos?per_page=100&#{githubAuthString}"
 				'github':
-					url: "https://github.com/balupton.atom"
+					url: "https://github.com/toshb.atom"
 				'twitter':
-					url: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=balupton&count=20&include_entities=true&include_rts=true"
-				'vimeo':
-					url: "http://vimeo.com/api/v2/balupton/videos.json"
+					url: "https://api.twitter.com/1/statuses/user_timeline.json?screen_name=toshb&count=20&include_entities=true&include_rts=true"
+				#'vimeo':
+				#	url: "http://vimeo.com/api/v2/balupton/videos.json"
 				#'flickr':
 				#	url: "http://api.flickr.com/services/feeds/photos_public.gne?id=35776898@N00&lang=en-us&format=json"
 

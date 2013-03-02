@@ -6,74 +6,11 @@ layout: 'page'
 <section class="pitch">
 	<h2>Pitch</h2>
 
-	<p>Each day my products are installed in thousands of websites, empower millions of website users, and are constantly praised in social media networks. These outstanding results are achieved through my extreme commitment to quality and excellence in everything I do. My time isn’t spent spreading word through social media, instead my time is spent in creating quality solutions that inspire people to spread praise everywhere they go. I’m fantastic at what I do and I love doing it.</p>
+	<p>blabla</p>
 
 	<a class="read-more js">more...</a>
 
 	<div class="more-to-read">
-		<p>Personally, liberation and empowerment are everything to me. These two key values drive me forward each and every step on my own epic journey. They've lead me to be able to do the work I'm most passionate about full-time, and in life have driven me to marry the most amazing woman I could ever know. Most importantly, they've lead myself to an unsurmountable curiosity and empathy towards the world and everything within it.</p>
-
-		<p>Even with all the experiences I've had in my life, the sour and the sweet - I'm blessed to have been part of every single one, for they have been the pieces that have built the me of today. The sour will continue to make myself stronger and build that thirst for success and improvement, while the sweet will serve as that warm encouragement that I'm on the right path.</p>
-
-		<p>Thanks for being part of my journey, sincerely,<br/>
-		- Benjamin</p>
+		<p>sdfsd</p>
 	</div>
-</section>
-
-
-<section class="awards">
-	<h2>Awards</h2>
-
-	<section class="awards-top">
-		<h3>
-			<a href="http://careers.stackoverflow.com/balupton">
-				<strong>
-					Top 10% for JavaScript, Node.js, jQuery, HTML5 and Ajax
-				</strong> via StackOverflow
-			</a>
-		</h3>
-		<p>With <a href="http://stackoverflow.com/users/130638/balupton"><%- @getStackoverflowReputation() %>+ reputation</a> on <a href="http://stackoverflow.com/faq">StackOverflow</a> I’ve been able to empower and teach thousands of other web developers by sharing my knowledge and expertise.</p>
-	</section>
-
-	<section class="awards-watched">
-		<h3>
-			<a href="https://github.com/search?q=location%3AAustralia&type=Users&language=JavaScript">
-				<em><strong>The <%= @getAustraliaJavaScriptRank() %> most watched JavaScript developer</strong> in Australia</em> via GitHub
-			</a><br/>
-			<a href="https://github.com/search?q=location%3AAustralia&type=Users">
-				<em><strong>The <%= @getAustraliaRank() %> most watched developer</strong> in Australia</em> via GitHub
-			</a>
-		</h3>
-		<p>By following someone on <a href="https://github.com">GitHub</a>, you are indicating that you love their work enough to be notified of every single piece of code they publish, big or small. Having <a href="https://github.com/balupton"><%- @getGithubFollowers() %>+ followers</a> is a fantastic testimonial of my professional taste and impact on the web development community.</p>
-	</section>
-
-	<section class="awards-satisfaction">
-		<h3>
-			<a href="http://www.linkedin.com/profile/view?id=15748447#profile-recommendations">
-				<em><strong>100% client satisfaction</strong> in the past year</em> via LinkedIn
-			</a>
-		</h3>
-		<p>Being able to provide a level of excellence which <a href="http://www.linkedin.com/profile/view?id=15748447#profile-recommendations">converts potential leads into raving fans</a>, won’t always be easy, but it is something I’m comitted to ensuring every single time.</p>
-	</section>
-
-	<section class="awards-historyjs">
-		<h3>
-			<a href="http://historyjs.net"><strong>Created History.js</strong></a><br/>
-			<a href="https://github.com/languages/JavaScript/most_watched?page=2">
-				<em>One of the 40 most popular JavaScript projects in the world</em> via GitHub
-			</a>
-		</h3>
-		<p><a href="https://github.com/balupton/history.js">History.js</a> is now one of the most game changing and popular utilities for web developers everywhere. Enabling and empowering <a href="https://github.com/balupton/history.js/wiki/Showcase">freelancers to thought leaders</a> to create the next generation of leading stateful web applications easily and effortlessly.</p>
-	</section>
-
-	<section class="awards-docpad">
-		<h3>
-			<a href="http://docpad.org"><strong>Created DocPad</strong></a><br/>
-			<a href="https://github.com/languages/CoffeeScript/most_watched?page=1">
-				<em>One of the 20 most popular CoffeeScript projects in the world</em> via GitHub
-			</a>
-		</h3>
-		<p><a href="https://github.com/bevry/docpad">DocPad</a> rethought web development and created a new kind of content management system. Each day <a href="https://github.com/bevry/docpad/wiki/Showcase">more and more websites</a> built with DocPad are going live, and more and more developers are joining the DocPad community.</p>
-	</section>
-
 </section>

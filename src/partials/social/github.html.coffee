@@ -5,7 +5,7 @@ cacheable: true
 # Github
 section '.github.links', ->
 	header ->
-		a href: 'https://github.com/balupton', title: 'Visit my Github', ->
+		a href: 'https://github.com/toshb', title: 'Visit my Github', ->
 			h1 -> 'GitHub'
 			img '.icon', src: '/images/github.gif'
 	ul ->
