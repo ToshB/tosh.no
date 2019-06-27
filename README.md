@@ -1,3 +1,2 @@
-toshb.github.com
+tosh.no
 ================
-Redirect from toshb.github.com to tosh.no
