@@ -341,6 +341,9 @@
       }
 
       document.addEventListener("click", function (event) {
+        if(event.target.nodeName === "B"){
+          event.target.parentNode.click();
+        }
         if (event.target.nodeName === "TD" || event.target.nodeName === "P") {
           var number = event.target.getAttribute("data-number");
           var cells = document.querySelectorAll(
